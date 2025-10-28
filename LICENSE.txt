@@ -1,0 +1,27 @@
+Prevue™ License (Attribution–NonCommercial–NoDerivatives 1.0)
+
+Copyright © 2025 Richard Hilburger.  All rights reserved.
+
+By obtaining, using, or distributing this software (“Prevue™”), you agree to the
+following terms:
+
+1. Permission is granted to download, copy, and use this software for personal,
+   educational, or non-profit purposes only. Commercial use is strictly prohibited
+   without the express written consent of the author.
+
+2. You may not modify, translate, adapt, reverse-engineer, decompile, or create
+   derivative works based on this software or any portion thereof.
+
+3. Redistribution is permitted only if this license text is included in full and
+   clear attribution is given to the original author, Richard Hilburger.
+
+4. The software is provided “AS IS”, without warranty of any kind, express or
+   implied, including but not limited to warranties of merchantability, fitness
+   for a particular purpose, or non-infringement. The author shall not be liable
+   for any damages or losses arising from the use or inability to use the software.
+
+5. These terms are governed by the laws of the United States of America. Use of
+   this software implies acceptance of this license.
+
+For permissions beyond the scope of this license, contact:
+Richard Hilburger (author)
