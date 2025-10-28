@@ -1,0 +1,245 @@
+
+/* This file is an "external style sheet".
+ * This file contains CSS code for the MH (Math Helper) project.
+ *
+ * Note:
+ * `percent` text scales best according to this web site:
+ * http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
+ */
+
+/* styles.css
+ *
+ *iframe.pdf-view {
+ *  width: 770px;
+ *  height: 90vh;
+ *  border: none;
+ */
+
+body {
+    background-color: rgb(177,150,130);   /* darker */
+    font-size: 100%;
+    }
+
+div {
+    /* Margins define the distance between box's 'border' and the edge of monitor,
+     * and margins (I think) just inherit color of page
+     * The right margin doesn't seem to do anything.
+     */
+    margin: 30px 0px 30px 100px;   /*    top, right, bottom, left  (the dark outside) */
+
+    border-style: solid;
+    border-color: rgb(251,246,239);  /* either:  transparent;  rgb(243,232,220); */
+    border-width: 50px;
+    border-top-width: 25px;
+    border-bottom-width: 7px;
+
+    /* No padding (around text area) is defined; so it is zero by default. */
+
+    font-family: "Inter", "DM Sans", "Open Sans", "dejavu serif", serif;
+    font-size: 1.15em;    /* was 1.05  was 16px for "dejavu serif" */
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 180%;
+    max-width: 44em;  /* was 36em or 580px */
+    min-width: 44em;  /* was 36em or 580px */
+    white-space: pre-wrap;              /* old */
+/*  white-space: normal;  */               /* new */
+/*  text-align: justify;  */               /* new */
+    background-color: rgb(251,246,239);     /* rgb(255,255,255); */
+    }
+
+/* for footer notes:
+ */
+p.tiny{           /* Arial,Helvetica,sans-serif; "dejavu serif", serif */
+        font-family: DM Sans, Open Sans, Arial,Helvetica,sans-serif;
+        font-size: .92em;
+        /*
+        border-color: rgb(177,150,130);  /* either:  transparent;  rgb(177,150,130);
+         */
+       }
+
+h1 {    /* title */
+    margin-top: 5px;
+    margin-bottom: 8px;
+    word-spacing: .2em;
+    letter-spacing: 0px;
+    font-size: 190%;
+    color: #007000;
+    }
+
+h2 {    /* title */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    word-spacing: .2em;
+    letter-spacing: 0px;
+    font-size: 160%;
+    color: #007000;
+    }
+
+h3 {    /* section */
+    margin-top: 30px;
+    margin-bottom: 0;
+    word-spacing: .03em;
+    letter-spacing: 0px;
+    font-size: 130%;
+    color: #007000;
+    }
+
+/* causes text to be black and italic:
+ */
+var {}
+
+
+/* .bb, begin box, for a  White Box :
+ */
+table {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    border: 3px solid green;
+    padding: 6px;
+    background-color: white;  /* was #fcfafb */
+    }
+
+/* for lines of a proof, which are at the  s  level:
+ */
+p {
+    margin: 8px 0px 12px 0px;
+    white-space: normal;
+    text-align: justify;
+    }
+
+/* for lines of a proof, which are at the  a  level:
+ */
+p.a {
+    margin-left: 4em;      /* was 70px */
+    }
+
+/* for lines of a proof, which are at the  d  level:
+ */
+p.d {
+    margin-left: 8em;     /* was 140px */
+    }
+
+/* for stmt identifiers (red):
+ */
+i {
+    font-family: "DM Sans", "Open Sans", "dejavu sans mono", "courier new", monospace;
+    font-style: normal;
+    font-size: 1em;    /* 1em = 16px */
+    color: #9f1144;
+    white-space: pre-wrap;
+    }
+
+/* for MaxiMath (blue):
+ */
+kbd {
+    /* font-family: sans-serif;, "dejavu sans", 0.96em */
+    font-family: "ubuntu", arial, helvetica, georgia;
+    font-style: italic;
+    font-size: 1.0em;
+    letter-spacing: .06em;
+    color: #0000bb;
+    white-space: pre-wrap;
+    }
+
+span.a {
+    color: #aa0055;
+    }
+
+span.b {
+    font-size: 1.15em;
+    color: #229977;
+    }
+
+span.c {
+    font-size: 1.3em;
+    color: #886633;
+    }
+
+span.d {
+    font-size: 1.45em;
+    color: #bb66cc;
+    }
+
+span.e {
+    font-size: 1.6em;
+    color: #88aacc;
+    }
+
+/* makes regular text light green and slanted
+ */
+dfn {
+    color: #3a6633;
+    }
+
+/*  for  in-only-one-line  code (brown):
+ */
+code  {
+    color: #663a33;
+    font-family: "dejavu sans mono", "courier new", monospace;
+    font-size: .95em;    /* slightly larger than other brownies (see below) */
+    line-height: 100%;
+    word-spacing: 0em;
+    letter-spacing: 0px;
+    }
+/*
+    font-family: "dejavu sans mono", "courier new", monospace;
+    font-size: .875em;
+    line-height: 150%;
+    word-spacing: 0em;
+    letter-spacing: 0px;
+
+    border-style: solid;
+    border-width: 0px;
+    padding: 0em;
+*/
+
+/*  .bcf, begin code framed, (brown):
+ */
+pre {
+    overflow: auto;
+    color: #663a33;
+    font-family: "dejavu sans mono", "courier new", monospace;
+    font-size: .875em;    /* 14px */
+    line-height: 150%;
+    word-spacing: 0em;
+    letter-spacing: 0px;
+
+    border-style: solid;
+    border-width: 2px;
+    padding: 6px;      /* .375em */
+    }
+
+/*  .bc, begin code, (brown):
+ */
+pre.c {
+    overflow: auto;
+    border-style: none;
+    padding: 0;
+    }
+
+hr  {
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    border: none;
+    margin: 5px auto;
+    }
+
+/*
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+hr  {
+    border: 2px solid grey;
+    }
+*/
+
+/* causes indentation:
+ */
+figure{
+    display: inline-block;
+}
