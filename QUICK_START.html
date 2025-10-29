@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Prevue&#8482; Quick Start</title>
+<title>Prevue™ Quick Start</title>
 <meta charset="UTF-8">
 <link href="mh.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -23,39 +23,48 @@ purpose.&nbsp; The image file can be seen in a browser or document viewer.
 4.&nbsp; Save and extract the ZIP file:</br>
 &nbsp; &nbsp; &nbsp; &nbsp; • Windows:&nbsp; right-click → Extract All…</br>
 &nbsp; &nbsp; &nbsp; &nbsp; • macOS:&nbsp; double-click the ZIP</br>
-&nbsp; &nbsp; &nbsp; &nbsp; • Linux:&nbsp; <code>unzip prevue.zip</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; • Linux:&nbsp; download&nbsp; Prevue-main.zip
 </p><p>
-5.&nbsp; Open the extracted folder and you’ll find:</br>
-&nbsp; &nbsp; &nbsp; &nbsp; • pv.py – main Prevue program</br>
+5.&nbsp; Further Terminal commands for Linux:</br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> cd ~/Downloads</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> mv Prevue-main.zip ~/prevue.zip</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> cd ~</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> unzip prevue.zip</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> cd prevue</code></br>
+&nbsp; &nbsp; &nbsp; &nbsp; <code> ls -l</code></br>
+</p><p>
+6.&nbsp; Among other files in folder `prevue` you will find:</br>
+&nbsp; &nbsp; &nbsp; &nbsp; • pv.py – the `main` Prevue™ program</br>
+&nbsp; &nbsp; &nbsp; &nbsp; • pvi.py – a module that pv imports</br>
 &nbsp; &nbsp; &nbsp; &nbsp; • prevue_documentation.html&nbsp; and supporting files</br>
 </p><p>
-6.&nbsp; Install svgwrite via this Terminal command:
+7.&nbsp; Install svgwrite via this Terminal command:
 </p><p>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>pip install svgwrite</code>
 </p><p>
-7.&nbsp; Run Prevue™ from the extracted folder, for example:
+8.&nbsp; Run Prevue™ from the extracted folder, for example:
 </p><p>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>python3&nbsp; pv.py&nbsp; sort_fcns.py</code>
 </p><p>
-</p><h3 style="text-align: left;">✨ Extra Steps For A Better Way To Run Prevue™</h3><p>8.&nbsp; Do steps 1 to 6 in the Quick Start (see above)
+</p><h3 style="text-align: left;">✨ Extra Steps For A Better Way To Run Prevue™</h3><p>9.&nbsp; Do steps 1 to 6 in the Quick Start (see above)
 </p><p>
-9.&nbsp; If you don't have a folder named bin in your home</br>
-&nbsp; &nbsp; &nbsp; folder, then create it via 2 Terminal commands:
+10.&nbsp; If you don't have a folder named bin in your home</br>
+&nbsp; &nbsp; &nbsp; &nbsp;folder, then create it via 2 Terminal commands:
 </p><p>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>cd ~</code></br>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>mkdir bin</code>
 </p><p>
-10.&nbsp; Copy two Prevue™ files to bin via 3 Terminal commands:
+11.&nbsp; Copy two Prevue™ files to bin via 3 Terminal commands:
 </p><p>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>cd ~/bin</code></br>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>cp /path/to/prevue/pv&nbsp; .</code></br>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>cp /path/to/prevue/pvi.py&nbsp; .</code>
 </p><p>
-11.&nbsp; Run Prevue™, from any folder, via this Terminal command:
+12.&nbsp; Run Prevue™ from within any folder that contains sort_fcns.py:
 </p><p>
 &nbsp; &nbsp; &nbsp; &nbsp; <code>pv sort_fcns.py</code>
 </p><p>
-</p><h3 style="text-align: left;">✨ Test  Prevue™</h3><p>12.&nbsp; Step 11 will create a file named&nbsp; <b>sort_fcns.py.svg</b></br>
+</p><h3 style="text-align: left;">✨ Test  Prevue™</h3><p>13.&nbsp; Step 12 will create a file named&nbsp; <b>sort_fcns.py.svg</b></br>
 &nbsp; &nbsp; &nbsp; &nbsp;To check that Prevue™ is working, execute the following</br>
 &nbsp; &nbsp; &nbsp; &nbsp;Terminal `compare` command:
 </p><p>
@@ -64,7 +73,7 @@ purpose.&nbsp; The image file can be seen in a browser or document viewer.
 &nbsp; &nbsp; &nbsp; If no output is generated, it means that the two</br>
 &nbsp; &nbsp; &nbsp; files are identical.
 </p><p>
-</p><h3 style="text-align: left;">✨ To See Image Files</h3><p>13.&nbsp; Both .svg and .pdf image files can be viewed on most browsers</br>
+</p><h3 style="text-align: left;">✨ To See Image Files</h3><p>14.&nbsp; Both .svg and .pdf image files can be viewed on most browsers</br>
 &nbsp; &nbsp; &nbsp; &nbsp;including&nbsp; Chrome, Chromium, Firefox and Brave.
 </p><p>
 </p><h3 style="text-align: left;">✨ Why Prevue™ Is Cool</h3><p>&nbsp;•&nbsp; It draws flow diagrams to enhance Python code</br>
