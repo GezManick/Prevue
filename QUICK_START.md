@@ -7,16 +7,16 @@ This image file can be seen in a browser or document viewer.
 ## Quick Start
 1. Download **Prevue-main.zip**.
 2. Get into the folder where **Prevue-main.zip** is located.
-3. Move it as follows:
+3. Move it as follows:</br>
          mv Prevue-main.zip ~/preview.zip
-4. Unzip **prevue.zip** and create folder **prevue**:
-      cd ~
+4. Unzip **prevue.zip** and create folder **prevue**:</br>
+      cd ~</br>
       unzip prevue.zip
-5. Install svgwrite:
+5. Install svgwrite:</br>
       pip install svgwrite
 ## Test Prevue™
-5. Generate the image file **sort_fcns.py.svg** via two commands:
-      cd prevue
+5. Generate the image file **sort_fcns.py.svg** via two commands:</br>
+      cd prevue</br>
       python3 pv.py sort_fcns.py
 6. View **sort_fcns.py.svg** in your browser.
 
