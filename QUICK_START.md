@@ -5,6 +5,8 @@ code.  This flowchart lets you see the <b>flow of control</b> within
 your script.  An SVG image file is created by Prevue™ for this
 purpose.  The image file can be seen in a browser or document viewer.
 
+**Project status:**  Prevue is provided as-is for public use and inspection.  External contributions or pull requests are not invited at this time.  However, bug reports and feedback about usage are welcome.
+
 ## ✨ Prevue™  Quick Start
 
 1. Visit:    https://github.com/gezmanick/Prevue
