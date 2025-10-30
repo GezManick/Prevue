@@ -13,85 +13,85 @@ purpose.  The image file can be seen in a browser or document viewer.
 
 3. Click on   <b>Download ZIP</b>   at bottom of drop-down menu
 
-4. Save and extract the ZIP file:</br>
+4. Save and extract the ZIP file:
    
-       • Windows:  right-click → Extract All…</br>
-       • macOS:  double-click the ZIP</br>
+       • Windows:  right-click → Extract All…
+       • macOS:  double-click the ZIP
        • Linux:  download  Prevue-main.zip
 
-5. Further Terminal commands for Linux:</br>
+5. Further Terminal commands for Linux:
    
-       <code> cd ~/Downloads</code></br>
-       <code> mv Prevue-main.zip ~/prevue.zip</code></br>
-       <code> cd ~</code></br>
-       <code> unzip prevue.zip</code></br>
-       <code> cd prevue</code></br>
-       <code> ls -l</code></br>
+           cd ~/Downloads
+           mv Prevue-main.zip ~/prevue.zip
+           cd ~
+           unzip prevue.zip
+           cd prevue
+           ls -l
 
-6. Among other files in folder `prevue` you will find:</br>
+6. Among other files in folder `prevue` you will find:
    
-       • pv.py – the `main` Prevue™ program</br>
-       • pvi.py – a module that pv imports</br>
-       • prevue_documentation.html  and supporting files</br>
+       • pv.py – the `main` Prevue™ program
+       • pvi.py – a module that pv imports
+       • prevue_documentation.html  and supporting files
 
-7. Install svgwrite via this Terminal command:
+7. Install `svgwrite` via this Terminal command:
    
-       <code>pip install svgwrite</code>
+          pip install svgwrite
 
 8. Run Prevue™ from the extracted folder, for example:
    
-       <code>python3  pv.py  sort_fcns.py</code>
+          python3  pv.py  sort_fcns.py
 
 ## ✨ Extra Steps For A Better Way To Run Prevue™
 
-9. Do steps 1 to 6 in the Quick Start (see above)
+9. Do steps 1 to 6 in the **Quick Start** (see above)
 
-10. If you don't have a folder named bin in your home</br>
+10. If you don't have a folder named `bin` in your home
       folder, then create it via 2 Terminal commands:
     
-       <code>cd ~</code></br>
-       <code>mkdir bin</code>
+          cd ~
+          mkdir bin
 
-11. Copy two Prevue™ files to bin via 3 Terminal commands:
+11. Copy two Prevue™ files to `bin` via 3 Terminal commands:
     
-       <code>cd ~/bin</code></br>
-       <code>cp /path/to/prevue/pv  .</code></br>
-       <code>cp /path/to/prevue/pvi.py  .</code>
+          cd ~/bin
+          cp /path/to/prevue/pv  .
+          cp /path/to/prevue/pvi.py  .
 
-12. Run Prevue™ from within any folder that contains sort_fcns.py:
+12. Run Prevue™ from within any folder that contains `sort_fcns.py`:
     
-       <code>pv sort_fcns.py</code>
+          pv sort_fcns.py
 
 ## ✨ Test  Prevue™
 
-13. Step 12 will create a file named  <b>sort_fcns.py.svg</b></br>
-      To check that Prevue™ is working, execute the following</br>
-      Terminal `compare` command:
+13. Step 12 will create a file named  `sort_fcns.py.svg`
+      To check that Prevue™ is working, execute the following
+      Terminal compare command:
     
-       <code>cmp  sort_fcns.py.svg  sort_fcns.svg</code>
+          cmp  sort_fcns.py.svg  sort_fcns.svg
     
-     If no output is generated, it means that the two</br>
+     If no output is generated, it means that the two
      files are identical.
 
 ## ✨ To See Image Files
 
-14. Both .svg and .pdf image files can be viewed on most browsers</br>
-      including  Chrome, Chromium, Firefox and Brave.
+14. Both `.svg` and `.pdf` image files can be viewed on most 
+      browsers including  Chrome, Chromium, Firefox and Brave.
 
 ## ✨ Why Prevue™ Is Cool
 
- •  It draws flow diagrams to enhance Python code</br>
- •  Works offline, with no dependencies beyond svgwrite</br>
- •  Useful for teaching, debugging, and documentation</br>
- •  Offers powerful benefits with an easy learning curve</br>
- •  Can make general-purpose flowcharts  not just Python</br>
- •  Can be used as a flow-chart framework for writing</br>
-      better pseudo-code in any programming language
+    •  It draws flow diagrams to enhance Python code
+    •  Works offline, with no dependencies beyond svgwrite
+    •  Useful for teaching, debugging, and documentation
+    •  Offers powerful benefits with an easy learning curve
+    •  Can make general-purpose flowcharts  not just Python
+    •  Can be used as a flow-chart framework for writing
+       better pseudo-code in any programming language
 
 ## ✨ To Learn More
 
-Read the unzipped README.txt and</br>
-prevue_documentation.html files.
+Read the unzipped `README.txt` and
+`prevue_documentation.html` files.
 
 ## ✨ Contact / Feedback
 
