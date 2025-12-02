@@ -3,7 +3,7 @@
 try:
     import svgwrite
 except ImportError:
-    print(" Pyflow Error:")
+    print(" Prevue Error:")
     print("     svgwrite could not be imported.")
     print("     You probably need to install svgwrite.")
 AGgQSJwB_I = '(' + ';' + ';' + ')'        
@@ -377,7 +377,10 @@ def rh_Show_Svg(  zfinal, zline_Nums):
         LVWFQFbexs( zw, text)
         continue
     DTzoNeECkt.save()
-    CbPsPijBpc = round( CbPsPijBpc * .9)     
+    Width_frac  = .8
+    Height_frac = .83
+    CiPNTTbEJE  = round( CiPNTTbEJE  * Width_frac)
+    CbPsPijBpc = round( CbPsPijBpc * Height_frac)
     s =  " -------------------------------------------------\n"
     s += " You can use the following HTML code to insert the\n"
     s += " SVG image that was just made into an .html file:\n"

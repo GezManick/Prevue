@@ -64,8 +64,8 @@ IrwZJaFJTI = IoeMXDPhDo
 IvPSqNTZpN = IoeMXDPhDo
 JAYCJiFfsS = 13
 JBQ_HVUilm = ['#end','continue','return','break','os.exit','sys.exit','raise']
-JBjEMlhlYZ = [   'if',      'for',    'while',   'def ',  'try', 'with','except','finally', 'match', 'case', 'class']
-JEHBgL_WtR =   [ '#end', 'continue', 'continue', 'return', '#end', '#end',  '#end',   '#end', '#end' , '#end', 'return']
+JBjEMlhlYZ = [   'if',      'for ',    'while',   'def ',  'try ', 'with ','except ','finally', 'match ', 'case', 'class ']
+JEHBgL_WtR =   [ '#end', 'continue', 'continue', 'return ', '#end', '#end',  '#end',   '#end', '#end' , '#end', 'return ']
 def JFShuDxxKw( line, sub_Str):
     ( at_least_1_visi, qty) = KAI_KbejHa( line)
     if not at_least_1_visi:
@@ -122,12 +122,12 @@ def JaTnhZWaeX():
         return( JAYCJiFfsS, ss)
     if JFShuDxxKw( ss, "#else"):
         print( " ss:", ss)
-        print( " Pyflow Error:  An `#else` appears on line %s" % str( EYZyOBAPXU))
+        print( " Prevue Error:  An `#else` appears on line %s" % str( EYZyOBAPXU))
         print( "                Perhaps #end was intended.  Please fix or alter.")
         sys.exit(1)
     if JFShuDxxKw( ss, '#end'):
         if EZfPb_zbH_[-1] != EzmZpXdIV_  and  EZfPb_zbH_[-1] != FXMECaIjlp:
-            print( " Pyflow Error:  An `#end` appears to be improperly located")
+            print( " Prevue Error:  An `#end` appears to be improperly located")
             print( "                on line %s." % JmPWykfOzG( ss))
             sys.exit(1)
         if JYXwWdqplD( ss):
@@ -164,7 +164,7 @@ def JaTnhZWaeX():
     if KAoaFayWyE( ss, "while"):
         ss = "©©Rwhile©©B" + ss[5:]
         return ( FpTCFZmNFs, ss)
-    if KAoaFayWyE( ss, "for"):
+    if KAoaFayWyE( ss, "for "):
         ss = "©©Rfor©©B" + ss[3:]
         return ( FpTCFZmNFs, ss)
     if KAoaFayWyE( ss, 'def '):
@@ -172,15 +172,15 @@ def JaTnhZWaeX():
         return ( ImhwkXUNDm, ss)
     if KAoaFayWyE( ss, "else"):
         if not ( EZfPb_zbH_[-1] == EzmZpXdIV_  or  EZfPb_zbH_[-1] == FXMECaIjlp):
-            print( "\n Pyflow Error:  The `else` on line %s appears to be" %  JmPWykfOzG( ss))
+            print( "\n Prevue Error:  The `else` on line %s appears to be" %  JmPWykfOzG( ss))
             print( "  misplaced.  Perhaps you used one of these keywords:")
             print( "  ( return, break, continue) between an `if` and its")
-            print( "  corresponding `else`.  If so, then you broke Pyflow")
+            print( "  corresponding `else`.  If so, then you broke Prevue")
             print( "  rule 2.  If that's the case, try rewriting your")
             print( "  `if` block without using `else`.")
             sys.exit(1)
         if EZfPb_zbH_[-1] == FXMECaIjlp:    
-            s ="\n Pyflow Error:  In Python, an `if` statement can have\n"
+            s ="\n Prevue Error:  In Python, an `if` statement can have\n"
             s += " only one `else`.  The `else` on line %s\n" % JmPWykfOzG( ss)
             s += " appears to be the second `else` for the previous `if`.\n"
             print( s)
@@ -189,22 +189,22 @@ def JaTnhZWaeX():
             EZfPb_zbH_[-1] = FXMECaIjlp
         ss = "©©Relse©©B" + ss[4:]
         return ( FxIxKjavqA, ss)
-    if KAoaFayWyE( ss, "try"):
+    if KAoaFayWyE( ss, "try "):
         ss = "©©Rtry©©B" + ss[3:]
         return ( FgUQfBVVlA, ss)
-    if KAoaFayWyE( ss, "with"):
+    if KAoaFayWyE( ss, "with "):
         ss = "©©Rwith©©B" + ss[4:]
         return ( FgUQfBVVlA, ss)
-    if KAoaFayWyE( ss, "except"):
+    if KAoaFayWyE( ss, "except "):
         ss = "©©Rexcept©©B" + ss[6:]
         return ( FgUQfBVVlA, ss)
     if KAoaFayWyE( ss, "elif"):
-        print( " Pyflow Error: The `elif` on line %s is not" % JmPWykfOzG( ss))
-        print( "               supported by the current version of Pyflow.")
+        print( " Prevue Error: The `elif` on line %s is not" % JmPWykfOzG( ss))
+        print( "               supported by the current version of Prevue.")
         sys.exit(1)
     if KAoaFayWyE( ss, "break"):
         if (FOcNQHECHF not in EZfPb_zbH_) and (ISZzWAjExy not in EZfPb_zbH_):
-            print( " Pyflow Error:  A problem is seen on line %s." % JmPWykfOzG( ss))
+            print( " Prevue Error:  A problem is seen on line %s." % JmPWykfOzG( ss))
             print( " There is a `break` statement, but seemingly no prior loop")
             print( " to break from.  See the above mirror dump.")
             sys.exit(1)
@@ -218,7 +218,7 @@ def JaTnhZWaeX():
         return ( GRGxjdxRIm, ss)
     if KAoaFayWyE( ss, "return"):
         if HVACIvhVsg not in EZfPb_zbH_:  
-            print( " Pyflow Warning:")
+            print( " Prevue Warning:")
             print( " There is a `return` statement on line %s," % JmPWykfOzG( ss))
             print( " but no function definition is on the stack.")
         if JYXwWdqplD( ss):
@@ -228,7 +228,7 @@ def JaTnhZWaeX():
         return ( GRegnPACsC, ss)
     if KAoaFayWyE( ss, "continue"):
         if FOcNQHECHF not in EZfPb_zbH_:
-            s = " Pyflow Warning:  There is a `continue` statement on\n"
+            s = " Prevue Warning:  There is a `continue` statement on\n"
             s += "                 line %s, but no prior loop." % JmPWykfOzG( ss)
             print( s)
         if JYXwWdqplD( ss):
@@ -313,12 +313,12 @@ def JsKHAsKxja():
         zST_line.append( text)
         if zST_line[ final_segii] == FxIxKjavqA:
             if (final_segii - 1) == -1:   
-                print( " Pyflow Error: The `else` on line %s" % str( EYZyOBAPXU))
+                print( " Prevue Error: The `else` on line %s" % str( EYZyOBAPXU))
                 print( " appears to be misplaced.")
                 sys.exit(1)
             lefty_seg = zST_line[ final_segii - 1]
             if not( lefty_seg == EzmZpXdIV_  or  lefty_seg == FXMECaIjlp):
-                s =  " Pyflow Error: The `else` on line %s\n" % str( EYZyOBAPXU)
+                s =  " Prevue Error: The `else` on line %s\n" % str( EYZyOBAPXU)
                 s += " needs to be indented once with respect\n"
                 s += " to an above `if`.\n"
                 print( s)
@@ -338,11 +338,11 @@ def JsKHAsKxja():
         if zST_line[ final_segii] == GvNwMZjNAf:
             zST_line[ final_segii] = HVACIvhVsg
             if (final_segii - 1) == -1:
-                print( " Pyflow Error:  An #end on line %s appears to be misplaced." % str( EYZyOBAPXU))
+                print( " Prevue Error:  An #end on line %s appears to be misplaced." % str( EYZyOBAPXU))
                 sys.exit(1)
             seg_type = zST_line[ final_segii - 1]
             if not ( seg_type == EzmZpXdIV_  or  seg_type == FXMECaIjlp):
-                print( " Pyflow Error:  An #end needs to be under an `if`.")
+                print( " Prevue Error:  An #end needs to be under an `if`.")
                 print( "                The #end was seen on line %s" % str( EYZyOBAPXU))
                 sys.exit(1)
             zST_line[ final_segii - 1] = GvNwMZjNAf   
@@ -354,7 +354,7 @@ def JsKHAsKxja():
             while True:
                 ii_seg -= 1  
                 if ii_seg == -1:
-                    print( "\n Pyflow Error: The `continue` on line %s:" % str( EYZyOBAPXU))
+                    print( "\n Prevue Error: The `continue` on line %s:" % str( EYZyOBAPXU))
                     print(  "                appears to be misplaced.")
                     break
                 if zST_line[ ii_seg] == EzmZpXdIV_  or  zST_line[ ii_seg] == FXMECaIjlp:
@@ -372,7 +372,7 @@ def JsKHAsKxja():
             while True:
                 ii_seg -= 1  
                 if ii_seg == -1:
-                    print( "\n Pyflow Error: The `break` the line being examined")
+                    print( "\n Prevue Error: The `break` the line being examined")
                     print(  "                appears to be misplaced.")
                     sys.exit(1)
                 seggy = zST_line[ ii_seg]
@@ -710,11 +710,11 @@ def NuTGHMiSbh():
 def OEYzpmEuEx():   
     global DuPxNRJkbT, DuwutE_IRa
     if not os.path.isfile( DuwutE_IRa):
-        print( "\n Pyflow Error:  The file %s does not exist." % DuwutE_IRa)
+        print( "\n Prevue Error:  The file %s does not exist." % DuwutE_IRa)
         sys.exit(1)
     readable = os.access( DuwutE_IRa, os.R_OK)
     if not readable:
-        print( "\n Pyflow Error:  The file %s is not readable." % DuwutE_IRa)
+        print( "\n Prevue Error:  The file %s is not readable." % DuwutE_IRa)
         sys.exit(1)
     with open( DuwutE_IRa, 'r', encoding='utf-8') as f_obj:  
         big_string = f_obj.read()
@@ -823,7 +823,7 @@ def main():
     print("------------------------------------------------")
     qty = JTzwahteUo()
     qty -= 1
-    print(" Well done!  Pyflow inserted %d lines." % qty)
+    print(" Well done!  Prevue inserted %d lines." % qty)
     print("             Look for the .svg output as %s" % R_Svg_File_Path)
     return
 if __name__ == "__main__":
